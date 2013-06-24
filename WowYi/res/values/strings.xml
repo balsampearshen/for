@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">WowYi</string>
+    <string name="menu_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+   	<string name="pull_to_refresh_pull_label">下拉刷新&#8230;</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新&#8230;</string>
+    <string name="pull_to_refresh_refreshing_label">加载中&#8230;</string>
+    <string name="pull_to_refresh_tap_label">Tap to refresh&#8230;</string>
+	<string name="memory">那些回忆们</string>
+</resources>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="color_background">#ffcbcfcf</color>
+	<color name="color_white">#ffffffff</color>
+	<color name="color_black">#ff000000</color>
+	<color name="color_lightblack">#ff2b2b2b</color>
+	<color name="color_gray">#ffc0c0c0</color>
+	<color name="color_tab_gray">#dd333333</color>
+	<color name="color_deepskyblue">#ff00bfff</color>
+	<color name="color_darkcyan">#ff00ced1</color>
+	<color name="color_darkblue">#ffb0c4d1</color>
+	<color name="color_royalblue">#ff4169E1</color>
+	<color name="color_line">#fffbd9c5</color>
+	<color name="color_lightgray">#ff424542</color>
+	<color name="color_dimgray">#ff696969</color>
+	<color name="color_orange">#ffee5400</color>
+	<color name="color_lightorange">#ffff871a</color>
+	<color name="color_text_red">#ffee5400</color>
+	<color name="color_red">#ffff0000</color>
+	<color name="color_green">#ff4682b4</color>
+	<color name="color_yellow">#ffffff00</color>
+	<color name="color_white_gray">#ffeeeeee</color>
+	<color name="color_gray_bright">#ff808080</color>
+	<color name="color_gray_dark">#ff444444</color>
+	<color name="color_gray_back">#ffdddcdc</color>
+	<color name="color_orange_line">#fff4d6c3</color>
+	<color name="color_pink_white">#e0dcea</color>
+	<color name="color_pink">#d5bfed</color>
+	<color name="color_grey_black">#706075</color>
+	<color name="color_category_name">#4e4a4a</color>
+	<color name="color_gray_sight">#c2c6d5</color>
+	<color name="color_blue_pink">#de3ad4</color>
+	<color name="color_sight_gray">#8b8989</color>
+    <color name="color_gold">#b89766</color>
+    <color name="color_clear">#00000000</color>
+    <color name="color_pink_blue">#84448d</color>
+    <color name="color_pull_to_refresh_text">#5f5f5f</color>
+    
+     <color name="black">#000000</color>
+</resources>
