@@ -8,5 +8,7 @@
     <string name="pull_to_refresh_release_label">松开可以刷新&#8230;</string>
     <string name="pull_to_refresh_refreshing_label">加载中&#8230;</string>
     <string name="pull_to_refresh_tap_label">Tap to refresh&#8230;</string>
-	<string name="memory">那些回忆们</string>
+	<string name="tab_search">搜索</string>
+	<string name="tab_home">首页</string>
+	<string name="tab_recommend_app">应用推荐</string>
 </resources>
