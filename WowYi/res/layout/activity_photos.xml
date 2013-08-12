@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@color/article_bg"
+    >
+     <RelativeLayout
+        android:id="@+id/rl_title"
+        style="@style/wow_title_layout" >
+		 <Button
+            android:id="@+id/btn_back"
+            style="@style/wow_title_left_btn" />
+        <TextView
+            android:id="@+id/tv_tips_title"
+            style="@style/wow_title_text"
+            android:text="相册" />
+    </RelativeLayout>
+	<com.balsampearshz.wowyi.pulltorefresh.PullToRefreshGridView
+	    android:id="@+id/gv_image_list"
+	    android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title"
+        android:columnWidth="145dp"
+        android:fadingEdge="none"
+        android:gravity="center"
+        android:listSelector="@color/color_clear"
+        android:numColumns="auto_fit"
+        android:stretchMode="columnWidth"
+	    >
+	</com.balsampearshz.wowyi.pulltorefresh.PullToRefreshGridView>
+</RelativeLayout>

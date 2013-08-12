@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="30dp"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_article_cell"
+        android:layout_width="match_parent"
+        android:layout_height="140dp"
+        android:background="@drawable/article_list_cell_bg"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+         >
+
+        <ImageView
+            android:id="@+id/iv_article_main_pic"
+            android:layout_width="149dp"
+            android:layout_height="93dp"
+            android:scaleType="fitXY"
+            android:src="@drawable/article_list_pic_default" 
+            android:layout_centerVertical="true"
+            />
+
+        <RelativeLayout
+            android:id="@+id/rl_article_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/iv_article_main_pic"
+             >
+
+            <TextView
+                android:id="@+id/tv_article_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ellipsize="end"
+                android:singleLine="true"
+                android:text="我被囚禁了一万年"
+                android:textColor="@color/article_title"
+                android:textSize="16sp" />
+
+            <TextView
+                android:id="@+id/tv_article_desc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_article_title"
+                android:layout_marginTop="3dp"
+                android:ellipsize="end"
+                android:lines="2"
+                android:text="泰兰德，真的是你吗，精力了一万年，当我再次见到你，你仍旧像那皎洁的月光，照耀在我心中"
+                android:textColor="@color/article_desc"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/tv_article_view_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/tv_article_desc"
+                android:layout_marginTop="3dp"
+                android:text="浏览数:1000"
+                android:textColor="@color/article_view"
+                android:textSize="14sp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

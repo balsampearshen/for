@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp" 
+    android:background="@drawable/bmp_article_comment_bg"
+    >
+
+    <RelativeLayout
+        android:id="@+id/rl_head_copy"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/color_white"
+        android:padding="8dp" >
+
+        <LinearLayout
+            android:id="@+id/ll_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/tv_from"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="来源:178"
+                android:textColor="@color/article_detail_head" />
+
+            <TextView
+                android:id="@+id/tv_author"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:text="作者：nga"
+                android:textColor="@color/article_detail_head" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_original_url"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/ll_author"
+            android:ellipsize="end"
+            android:singleLine="true"
+            android:text="原文地址:nga.178.com/read.php?tid=6304889"
+            android:textColor="@color/article_detail_head" />
+
+        <WebView
+            android:id="@+id/wv_article_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv_original_url"
+            android:layout_marginTop="10dp"
+            android:visibility="gone"
+             />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/article_detail_comment_bar"
+            android:layout_below="@id/wv_article_content"
+            android:layout_marginTop="5dp"
+            android:paddingLeft="8dp"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+             >
+            <TextView 
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="评论区"
+                android:textColor="@color/color_white"
+                android:textSize="12sp"
+                />
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

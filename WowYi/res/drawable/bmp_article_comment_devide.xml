@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<bitmap xmlns:android="http://schemas.android.com/apk/res/android" 
+    android:src="@drawable/article_detail_comment_devide_repater"
+    android:tileMode="repeat"
+    >
+</bitmap>

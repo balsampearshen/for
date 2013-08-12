@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/index_bg" >
+
+    <RelativeLayout
+        android:id="@+id/rl_title"
+        style="@style/wow_title_layout" >
+
+        <TextView
+            android:id="@+id/tv_tips_title"
+            style="@style/wow_title_text"
+            android:text="首页" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_content"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title" 
+        android:gravity="center"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_icons_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+            <LinearLayout style="@style/wow_index_icons_layout" >
+
+                <Button
+                    android:id="@+id/btn_article"
+                    style="@style/wow_index_icons_layout_buttton"
+                    android:background="@drawable/index_article" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_article"
+                    style="@style/wow_index_icons_layout_text"
+                    android:text="@string/article" />
+            </LinearLayout>
+
+			<LinearLayout style="@style/wow_index_icons_layout" >
+
+                <Button
+                    android:id="@+id/btn_music"
+                    style="@style/wow_index_icons_layout_buttton"
+                    android:background="@drawable/index_music" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_music"
+                    style="@style/wow_index_icons_layout_text"
+                    android:text="@string/music" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/wow_index_icons_layout" >
+
+                <Button
+                    android:id="@+id/btn_images"
+                    style="@style/wow_index_icons_layout_buttton"
+                    android:background="@drawable/index_images" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_images"
+                    style="@style/wow_index_icons_layout_text"
+                    android:text="@string/images" />
+            </LinearLayout>
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/ll_icons_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" 
+            android:layout_below="@id/ll_icons_first"
+            android:layout_marginTop="40dp"
+            >
+
+            <LinearLayout style="@style/wow_index_icons_layout" >
+
+                <Button
+                    android:id="@+id/btn_movie"
+                    style="@style/wow_index_icons_layout_buttton"
+                    android:background="@drawable/index_movie" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_movie"
+                    style="@style/wow_index_icons_layout_text"
+                    android:text="@string/movie" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/wow_index_icons_layout" >
+
+                <Button
+                    android:id="@+id/btn_note"
+                    style="@style/wow_index_icons_layout_buttton"
+                    android:background="@drawable/index_note" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_note"
+                    style="@style/wow_index_icons_layout_text"
+                    android:text="@string/note" />
+            </LinearLayout>
+
+            <LinearLayout style="@style/wow_index_icons_layout" >
+
+                <Button
+                    android:id="@+id/btn_set"
+                    style="@style/wow_index_icons_layout_buttton"
+                    android:background="@drawable/index_setting" 
+                    />
+
+                <TextView
+                    android:id="@+id/tv_set"
+                    style="@style/wow_index_icons_layout_text"
+                    android:text="@string/set" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
