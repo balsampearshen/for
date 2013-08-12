@@ -10,7 +10,7 @@ public class ImageSaveQueue<String> {
 	private HashMap<String, String> imageSaveCache = new HashMap<String, String>();
 	private int SIZE = 800;
 	private int REMOVESIZE = 50;
-	private static ImageSaveQueue queue = null;
+	private static ImageSaveQueue queue;
 
 	private ImageSaveQueue() {
 	}

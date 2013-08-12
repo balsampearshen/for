@@ -37,4 +37,15 @@
     <color name="color_pull_to_refresh_text">#5f5f5f</color>
     
      <color name="black">#000000</color>
+     <color name="article_title">#828f58</color>
+     <color name="article_view">#286f3f</color>
+     <color name="article_desc">#654e30</color>
+     <color name="article_bg">#43230a</color>
+     
+     <color name="article_detail_comment_nickname">#968867</color>
+     <color name="article_detail_comment_content">#88A24E</color>
+     <color name="article_detail_head">#9B1D28</color>
+     <color name="article_detail_comment_bar">#c17c43</color>
+     <color name="article_detail_content">#745f3f</color>
+     <color name="article_detail_content_bg">#f9efaf</color>
 </resources>

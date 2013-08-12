@@ -13,7 +13,7 @@ public class NetUtil implements NetReceiveDelegate{
 	
 	public enum Net_Tag
 	{	
-
+		Tag_Article_List,Tag_Article_Comment_List,Tag_Add_Article_Comment, Net_Tag_Images_Category, Net_Tag_Category_Images
 	}
 	public NetReceiveDelegate delegate;
 	public Net_Tag tag;
@@ -33,8 +33,31 @@ public class NetUtil implements NetReceiveDelegate{
 		String exitUrl = StaticValue.URL+"/User/unbind";
 		connect(exitUrl, params);
 	}
-
-	
+	//文章列表
+	public void articleList(Map<String, String> params){
+		String url = StaticValue.URL+"Article/articleList";
+		connect(url, params);
+	}
+	//文章评论列表
+	public void articleCommentList(Map<String, String> params){
+		String url = StaticValue.URL+"Article/articleCommentList";
+		connect(url, params);
+	}
+	//添加文章评论
+	public void addArticleComment(Map<String, String> params){
+		String url = StaticValue.URL+"Article/addArticleComment";
+		connect(url, params);
+	}
+	//获取图片专辑列表
+	public void imageList(Map<String, String> params){
+		String url = StaticValue.URL+"Image/imageCategory";
+		connect(url, params);
+	}
+	//某个专辑下图片
+	public void images(Map<String, String> params){
+		String url = StaticValue.URL+"Image/imageList";
+		connect(url, params);
+	}
 	private void connect(final String url, final Map<String, String> params) {
 		
 		new AsyncTask<String, Void, String>(){

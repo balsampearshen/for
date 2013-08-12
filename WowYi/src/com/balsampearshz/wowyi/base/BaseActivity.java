@@ -8,17 +8,22 @@ import android.view.KeyEvent;
 import android.widget.Toast;
 
 import com.balsampearshz.wowyi.R;
-import com.umeng.analytics.MobclickAgent;
+import com.nostra13.universalimageloader.core.DisplayImageOptions;
+import com.nostra13.universalimageloader.core.ImageLoader;
+import com.nostra13.universalimageloader.core.ImageLoaderConfiguration;
 
 public class BaseActivity extends Activity {
 	private ProgressDialog dialog = null;
 	protected Context mContext;
+	protected ImageLoader imageLoader = ImageLoader.getInstance();
+	public DisplayImageOptions options;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		mContext = this;
 		overridePendingTransition(R.anim.in_from_right, R.anim.out_to_left);
-		MobclickAgent.updateOnlineConfig(this);
+		
+//		MobclickAgent.updateOnlineConfig(this);
 	}
 	
 	public void showToast(String content) {
@@ -53,5 +58,20 @@ public class BaseActivity extends Activity {
 	
 	public void back(){
 		finish();
+	}
+	
+	 /**
+	 * 图片加载
+	 */
+	public void imageLoaderOption(int id) {
+		imageLoader.init(ImageLoaderConfiguration.createDefault(this));
+		if(id==-1){
+			options = new DisplayImageOptions.Builder().cacheInMemory().cacheOnDisc().build();
+		}
+		else{
+			options = new DisplayImageOptions.Builder().showStubImage(id).showImageForEmptyUri(id)
+					.showImageOnFail(id).cacheInMemory().cacheOnDisc().build();
+		}
+	
 	}
 }

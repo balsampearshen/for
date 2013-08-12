@@ -43,7 +43,7 @@ public class BaseExitActivity extends BaseActivity {
 					tExit.schedule(task, 2200, 2200);
 				} 
 			} else {
-				MobclickAgent.onKillProcess( mContext );
+//				MobclickAgent.onKillProcess( mContext );
 				finish();
 				System.exit(0);
 			}

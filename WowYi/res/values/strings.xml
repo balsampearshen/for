@@ -11,4 +11,11 @@
 	<string name="tab_search">搜索</string>
 	<string name="tab_home">首页</string>
 	<string name="tab_recommend_app">应用推荐</string>
+	
+	<string name="music">音乐</string>
+	<string name="movie">视频</string>
+	<string name="images">相册</string>
+	<string name="article">文章</string>
+	<string name="note">小说</string>
+	<string name="set">设置</string>
 </resources>
