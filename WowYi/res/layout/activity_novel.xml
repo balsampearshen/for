@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:background="@drawable/article_bg"
+    >
+     <RelativeLayout
+        android:id="@+id/rl_title"
+        style="@style/wow_title_layout" >
+		 <Button
+            android:id="@+id/btn_back"
+            style="@style/wow_title_left_btn" />
+        <TextView
+            android:id="@+id/tv_tips_title"
+            style="@style/wow_title_text"
+            android:text="小说列表" />
+    </RelativeLayout>
+	<com.balsampearshz.wowyi.pulltorefresh.PullToRefreshListView 
+	    android:id="@+id/lv_novel_list"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/rl_title"
+        android:cacheColorHint="#00000000"
+        android:divider="#00000000"
+        android:fadingEdge="none"
+        android:fastScrollEnabled="true"
+        android:listSelector="@color/color_clear"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:scrollbarStyle="outsideOverlay"
+	    >
+	</com.balsampearshz.wowyi.pulltorefresh.PullToRefreshListView>
+	<RelativeLayout
+        android:id="@+id/rl_progress"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_title"
+         >
+
+        <ProgressBar
+            android:id="@+id/pb_progressBar"
+            style="@android:attr/progressBarStyleSmallTitle"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_centerInParent="true" 
+            android:visibility="invisible"
+            />
+
+        <Button
+            android:id="@+id/btn_retry"
+            style="@style/xf_retry_button"
+            android:visibility="invisible" />
+    </RelativeLayout>
+</RelativeLayout>
