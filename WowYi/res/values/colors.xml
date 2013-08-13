@@ -48,4 +48,7 @@
      <color name="article_detail_comment_bar">#c17c43</color>
      <color name="article_detail_content">#745f3f</color>
      <color name="article_detail_content_bg">#f9efaf</color>
+     
+     <color name="novel_desc_color">#767676</color>
+     <color name="novel_download_count">#aea026</color>
 </resources>

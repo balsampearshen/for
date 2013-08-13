@@ -152,7 +152,7 @@ public class SplashActivity extends Activity implements NetReceiveDelegate{
 //			parmas.put("device_name",)
 	        
 			NetUtil util = new NetUtil();
-			util.delegate = this;
+			util.setDelegate(this);
 			util.regUtil(params);
 	    }
 		else
@@ -182,7 +182,6 @@ public class SplashActivity extends Activity implements NetReceiveDelegate{
 	}
 	@Override
 	public void receiveFail(NetReceiveDelegate delegate, String message) {
-		
 		retryButton.setVisibility(View.VISIBLE);
 	}
 	

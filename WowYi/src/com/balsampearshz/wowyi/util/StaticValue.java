@@ -28,7 +28,7 @@ public class StaticValue {
 	public static String getPicCachePath() {
 		String sdState = Environment.getExternalStorageState();// 获得sd卡的状态
 		String picCachePath = "";
-		if (!sdState.equals(Environment.MEDIA_MOUNTED)) { // 判断SD卡是否存在
+		if (sdState.equals(Environment.MEDIA_MOUNTED)) { // 判断SD卡是否存在
 			picCachePath = "/sdcard-ext/Android/data/"+PACKAGE_NAME+"/cache";
 		}else{
 			picCachePath = Environment.getExternalStorageDirectory() + "/Android/data/"+PACKAGE_NAME+"/cache";

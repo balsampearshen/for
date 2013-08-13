@@ -13,7 +13,7 @@ public class NetUtil implements NetReceiveDelegate{
 	
 	public enum Net_Tag
 	{	
-		Tag_Article_List,Tag_Article_Comment_List,Tag_Add_Article_Comment, Net_Tag_Images_Category, Net_Tag_Category_Images
+		Tag_Article_List,Tag_Article_Comment_List,Tag_Add_Article_Comment, Net_Tag_Images_Category, Net_Tag_Category_Images, Net_Tag_Novel_List
 	}
 	public NetReceiveDelegate delegate;
 	public Net_Tag tag;
@@ -57,6 +57,12 @@ public class NetUtil implements NetReceiveDelegate{
 	public void images(Map<String, String> params){
 		String url = StaticValue.URL+"Image/imageList";
 		connect(url, params);
+	}
+	//小说列表
+	public void novelList(Map<String, String> params){
+		String url = StaticValue.URL+"Novel/novelList";
+		connect(url, params);
+		
 	}
 	private void connect(final String url, final Map<String, String> params) {
 		
