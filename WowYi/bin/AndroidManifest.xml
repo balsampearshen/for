@@ -48,6 +48,7 @@
         <activity android:name=".AppRecommendActivity" android:screenOrientation="portrait" />
         <activity android:name=".ArticleDetailActivity"  android:screenOrientation="portrait" />
         <activity android:name=".ImagesCategoryDetail"  android:screenOrientation="portrait" />
+        <activity android:name=".MusicListActivity"  android:screenOrientation="portrait" />
         <activity android:name=".MainActivity"  android:screenOrientation="portrait" />
     </application>
 </manifest>
