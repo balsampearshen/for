@@ -50,13 +50,16 @@ public class ArticleActivity extends BaseActivity implements NetReceiveDelegate 
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_article);
+		
 		initView();
+		showPrgressDialog(this, "正在加载，请稍候");
+		getData();
 		imageLoaderOption(-1);
 	}
 	
 	private void initView(){
 		articlesList = new ArrayList<Article>();
-		pullToRefreshListView = (PullToRefreshListView)findViewById(R.id.lv_article_list);
+		pullToRefreshListView = (PullToRefreshListView)findViewById(R.id.lv_article_list); 
 		pullToRefreshListView.setOnRefreshListener(new OnRefreshListener() {
 			@Override
 			public void onRefresh() {
@@ -71,7 +74,7 @@ public class ArticleActivity extends BaseActivity implements NetReceiveDelegate 
 		listView.setOnItemClickListener(onItemClickListener);
 		btnBack = (Button) findViewById(R.id.btn_back);
 		btnBack.setOnClickListener(onClickListener);
-		getData();
+		
 	}
 	/**
 	 * 获取数据
@@ -95,7 +98,8 @@ public class ArticleActivity extends BaseActivity implements NetReceiveDelegate 
 
 	@Override
 	public void receiveFail(NetReceiveDelegate delegate, String message) {
-
+		isLoading = false;
+		dismissDialog();
 	}
 	/**
 	 * 解析数据
@@ -117,6 +121,7 @@ public class ArticleActivity extends BaseActivity implements NetReceiveDelegate 
 					articlesList.addAll(list);
 					articleListAdapter.notifyDataSetChanged();
 					pullToRefreshListView.onRefreshComplete();
+					dismissDialog();
 					isLoading = false;
 				}
 					
